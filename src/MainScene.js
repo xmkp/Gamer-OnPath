@@ -51,8 +51,6 @@ var MainSceneLayer = cc.Layer.extend({
 
         for (var index = 0; index < this._filed.length; index++) {
             var position =  cc.p(this._filed[index][0],this._filed[index][1]);
-            cc.log(position.x + "   " + position.y);
-            cc.log(location.x + "   " + location.y);
             var rect = cc.rect(position.x - this._touchLength,position.y - this._touchLength,2* this._touchLength,2*this._touchLength);
             if(cc.rectContainsPoint(rect,location)) return this._filed[index];
         }
@@ -60,12 +58,9 @@ var MainSceneLayer = cc.Layer.extend({
     },
 
     _onTouchBegan: function (touch, event) {
-        cc.log("_onTouchBegan");
         var target = event.getCurrentTarget();
         var location = touch.getLocation();
-        //cc.log(location.x + "   " + location.y);
         var nodeLocation = target._drawNode.convertToNodeSpace(location);
-        //cc.log(nodeLocation.x + "   " + nodeLocation.y);
         this._touchNode = this.getTouchedFiled(nodeLocation);
         cc.log(this._touchNode);
         return true;
@@ -80,8 +75,6 @@ var MainSceneLayer = cc.Layer.extend({
         {
         	this._touchNode[0] = Math.floor(nodeLocation.x);
         	this._touchNode[1] = Math.floor(nodeLocation.y);
-
-            //this.collisionMagic();
             this.reDraw();
         }
 
@@ -246,7 +239,7 @@ var MainSceneLayer = cc.Layer.extend({
 var MainScene = cc.Scene.extend({
 	onEnter:function () {
 		this._super();
-		var layer = new MainSceneLayer();
+		var layer = new StartLayer();
 		this.addChild(layer);
 	}
 });
