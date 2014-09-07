@@ -4,10 +4,62 @@
     <dict>
         <key>frames</key>
         <dict>
+            <key>bg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{300,300}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{300,300}}</string>
+                <key>sourceSize</key>
+                <string>{300,300}</string>
+            </dict>
+            <key>btncurrent.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{367,147},{61,61}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{61,61}}</string>
+                <key>sourceSize</key>
+                <string>{65,65}</string>
+            </dict>
+            <key>btnlock.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{304,210},{61,61}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{61,61}}</string>
+                <key>sourceSize</key>
+                <string>{65,65}</string>
+            </dict>
+            <key>btnpassed.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{304,147},{61,61}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,1},{61,61}}</string>
+                <key>sourceSize</key>
+                <string>{65,65}</string>
+            </dict>
             <key>chuangguan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{122,132},{200,58}}</string>
+                <string>{{430,147},{200,58}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -20,11 +72,11 @@
             <key>jingsai.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{62,132},{200,58}}</string>
+                <string>{{204,304},{200,58}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,2},{200,58}}</string>
                 <key>sourceSize</key>
@@ -33,11 +85,11 @@
             <key>top.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{128,143}}</string>
+                <string>{{304,2},{128,143}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,2},{128,143}}</string>
                 <key>sourceSize</key>
@@ -46,11 +98,11 @@
             <key>wan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,132},{200,58}}</string>
+                <string>{{2,304},{200,58}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,2},{200,58}}</string>
                 <key>sourceSize</key>
@@ -64,9 +116,9 @@
             <key>realTextureFileName</key>
             <string>buttons.png</string>
             <key>size</key>
-            <string>{182,334}</string>
+            <string>{490,364}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:6c2bde54f9de1829f40836cef65be9ca$</string>
+            <string>$TexturePacker:SmartUpdate:a42fee449f1270d9ea62d22ba567a3b1$</string>
             <key>textureFileName</key>
             <string>buttons.png</string>
         </dict>

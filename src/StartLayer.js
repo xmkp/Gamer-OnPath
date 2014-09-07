@@ -6,7 +6,9 @@ var StartLayer = cc.Layer.extend({
 	init:function () {
 		cc.spriteFrameCache.addSpriteFrames(res.p_buttons_plist);
 		var winSize = cc.director.getWinSize();
-		
+
+        this.addChild(PublicFunction.getBg());
+
 		var logo = cc.Sprite.createWithSpriteFrameName("top.png");
 		logo.setAnchorPoint(0.5,0.5);
         logo.setPosition(winSize.width / 2,winSize.height / 2 + 150);
@@ -14,8 +16,6 @@ var StartLayer = cc.Layer.extend({
 
         var levelNormal = cc.Sprite.createWithSpriteFrameName("chuangguan.png");
         var levelSelected = cc.Sprite.createWithSpriteFrameName("chuangguan.png");
-        //levelSelected.setScale(1.1);
-        //levelSelected.setAnchorPoint(0.5,0.5);
         var levelDisabled = cc.Sprite.createWithSpriteFrameName("chuangguan.png");
 
         var competitionNormal = cc.Sprite.createWithSpriteFrameName("jingsai.png");
@@ -28,7 +28,7 @@ var StartLayer = cc.Layer.extend({
 
 
         var levelMemuItem = new cc.MenuItemSprite(levelNormal, levelSelected, levelDisabled, function () {
-
+            cc.director.runScene(new LevelSelectScene());
         }.bind(this));
 
         var competitionMemuItem = new cc.MenuItemSprite(competitionNormal, competitionSelected, competitionDisabled, function () {
@@ -36,7 +36,7 @@ var StartLayer = cc.Layer.extend({
         }.bind(this));
 
         var howToPlayMemuItem = new cc.MenuItemSprite(howToPlayNormal, howToPlaySelected, howToPlayDisabled, function () {
-
+            cc.director.pushScene(new HoToPlayScene());
         }.bind(this));
 
         var menu = new cc.Menu(levelMemuItem, competitionMemuItem, howToPlayMemuItem);

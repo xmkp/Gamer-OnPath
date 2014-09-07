@@ -12,8 +12,11 @@
 
     "jsList" : [
         "src/resource.js",
+        "src/PublicFunction.js",
         "src/MainScene.js",
         "src/Levels.js",
-        "src/StartLayer.js"
+        "src/StartLayer.js",
+        "src/HoToPlayScene.js",
+        "src/LevelSelectScene.js"
     ]
 }

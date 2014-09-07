@@ -146,10 +146,14 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>top.png</filename>
-            <filename>wan.png</filename>
-            <filename>竞赛.png</filename>
-            <filename>chuangguan.png</filename>
+            <filename>../orgres/chuangguan.png</filename>
+            <filename>../orgres/jingsai.png</filename>
+            <filename>../orgres/top.png</filename>
+            <filename>../orgres/wan.png</filename>
+            <filename>../orgres/bg.png</filename>
+            <filename>../orgres/btncurrent.png</filename>
+            <filename>../orgres/btnlock.png</filename>
+            <filename>../orgres/btnpassed.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
